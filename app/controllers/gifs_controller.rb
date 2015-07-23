@@ -4,8 +4,4 @@ class GifsController < ApplicationController
     @gifs = Gif.all
   end
 
-  def search
-    @gif = Gif.new
-  end
-
 end

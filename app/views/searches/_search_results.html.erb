@@ -1,0 +1,11 @@
+<div class="row search-results">
+  <% if @search_results %>
+    <% @search_results.each do |result| %>
+      <div class="col-md-4">
+        <img src="<%= result[:url] %>" height="200" > <br>
+        <%= result[:name] %> <br>
+        <%= result[:rating] %> <br>
+      </div>
+    <% end %>
+  <% end %>
+</div>

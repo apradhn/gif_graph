@@ -5,11 +5,11 @@
   <div class="col-md-6">
   <%= form_tag("/search", method: "get", class:"form-horizontal") do |q| %>
     <div class="form-group">
-      <%= label_tag(:q, "Search for:") %>
+      <%= label_tag(:q, "Search for a gif from giphy") %>
       <%= text_field_tag(:q, "", class: "form-control") %>      
     </div>
     <div class="form-group">
-      <%= submit_tag("Search", class: "btn btn-default") %>      
+      <%= submit_tag("Search", class: "btn btn-default", remote: true) %>      
     </div>
   <% end %>
   </div>
